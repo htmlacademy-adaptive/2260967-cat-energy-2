@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Юлия Потапова](https://up.htmlacademy.ru/adaptive-individual/2/user/2260967).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra)
 
 ---
 
