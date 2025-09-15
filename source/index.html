@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
+
 <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>Cat-energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header_logo" href="#">
-      <img src="#" alt="cat energy">
+    <a class="main-header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
+          srcset="icons/desktop-cat-logo.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
+          srcset="icons/tablet-cat-logo.svg">
+        <img class="main-header__icon" src="icons/mobile-cat-logo.svg" alt="cat energy" width="33" height="38">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml"
+          srcset="icons/desktop-letters-logo.svg">
+        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml"
+          srcset="icons/tablet-letters-logo.svg">
+        <img class="main-header__icon" src="icons/mobile-letters-logo.svg" alt="cat energy" width="101" height="18">
+      </picture>
     </a>
+    <button class="main-header__toggle">
+      <span class="visually-hidden">Открыть меню</span>
+    </button>
     <nav class="main-nav">
-      <button class="main-nav__toggle">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__list-item">
             <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
           </li>
-          <li class="main-nav__list-item"> <a href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="main-nav__list-item"> <a href="#">Подбор программы</a></li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__link" href="#">Подбор программы</a>
+          </li>
         </ul>
       </div>
     </nav>
@@ -32,9 +49,17 @@
   <main class="main-container">
     <div class="main-promo">
       <h1 class="main-promo__title"> Функциональное питание для котов</h1>
-      <h2 class="main-promo__description">Занялся собой? Займись котом!</h2>
-      <img class="main-promo__image" src="#" alt="Питание для котов курица">
-      <button class="button">Подобрать программу</button>
+      <p class="main-promo__description">Занялся собой? Займись котом!</p>
+      <picture>
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png"
+          srcset="images/desktop-index-can@1x.png, images/desktop-index-can@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png"
+          srcset="images/tablet-index-can@1x.png, images/tablet-index-can@2x.png 2x">
+        <img class="main-header__icon" src="images/mobile-index-can@1x.png" alt="Питание для котов курица" width="280"
+          height="270">
+      </picture>
+
+      <a href="#" class="button">Подобрать программу</a>
     </div>
     <div class="catalog-promo">
       <div class="catalog-promo-card">
@@ -45,7 +70,6 @@
         </p>
         <div class="catalog-promo-card-button">
           <a class="catalog-promo-card-button__link" href="#">Каталог slim</a>
-          <img src="/images/catalog-promo-card-button_arrow.svg" alt="">
         </div>
       </div>
       <div class="catalog-promo-card">
@@ -56,71 +80,82 @@
         </p>
         <div class="catalog-promo-card-button">
           <a class="catalog-promo-card-button__link" href="#">каталог pro</a>
-          <img src="/images/catalog-promo-card-button_arrow.svg" alt="">
         </div>
       </div>
     </div>
     <div class="main-advantages">
-      <h2 class="main-advantages_title">Как это работает</h2>
+      <h2 class="main-advantages__title">Как это работает</h2>
       <ul class="main-advantages-list">
         <li>
-          <p class="main-advantages-list__description">Функциональное питание
-            содержит только полезные
-            питательные вещества.</p>
-          <div class="main-advantages-list__icon">
-            <img src="#" alt="#">
-          </div>
+          <p class="main-advantages-list__description">Функциональное питание содержит только полезные питательные
+            вещества.</p>
         </li>
         <li>
           <p class="main-advantages-list__description">Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</p>
-          <div class="main-advantages-list__icon">
-            <img src="#" alt="#">
-          </div>
         </li>
         <li>
           <p class="main-advantages-list__description">Замените один-два приема
             обычной еды на наше
             функциональное питание.</p>
-          <div class="main-advantages-list__icon">
-            <img src="#" alt="#">
-          </div>
         </li>
         <li>
           <p class="main-advantages-list__description">Уже через месяц наслаждайтесь
             изменениями к лучшему
             вашего питомца!</p>
-          <div class="main-advantages-list__icon">
-            <img src="#" alt="#">
-          </div>
         </li>
       </ul>
     </div>
     <div class="main-case">
-      <h2 class="main-case_title">Живой пример</h2>
+      <h2 class="main-case__title">Живой пример</h2>
       <p class="main-case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
         обычный корм на Cat Energy Slim. Отличный результат
         без изнуряющих тренировок! При этом он не менял своих
         привычек и по-прежнему спит по 16 часов в день. </p>
       <div class="main-case-statistics">
         <h2 class="main-case-statistics__stats"> 5 кг</h2>
-        <p class="main-case-statistics_description">снижение веса</p>
+        <p class="main-case-statistics__description">снижение веса</p>
         <h2 class="main-case-statistics__stats"> 60 дней</h2>
-        <p class="main-case-statistics_description">затрачено времени</p>
+        <p class="main-case-statistics__description">затрачено времени</p>
         <div class="main-case-image-slider">
-          <img src="#" alt="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
+              srcset="images/tablet-cat-before@1x.png, images/tablet-cat-before@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png"
+              srcset="images/tablet-cat-before@1x.png, images/tablet-cat-before@2x.png 2x">
+            <img class="main-header__icon" src="images/mobile-cat-before@1x.png" alt="Ваш кот до и после" width="280"
+              height="256">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
+              srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png"
+              srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
+            <img class="main-header__icon" src="images/mobile-cat-after@1x.png" alt="Ваш кот до и после" width="280"
+              height="256">
+          </picture>
         </div>
       </div>
     </div>
     <div class="main-map">
-      <h2 class="main-map_title">приглашаем к сотрудничеству дилеров!</h2>
-      <p class="main-map_text"> ул. Большая Конюшенная, д. 19/8</p>
-      <p class="main-map_text"> Санкт-Петербург</p>
+      <picture>
+        <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
+          srcset="images/desktop-location@1x.png, images/desktop-location@2x.png 2x">
+        <source media="(min-width: 768px)" width="768" height="400" type="image/png"
+          srcset="images/tablet-location@1x.png, images/tablet-location@2x.png 2x">
+        <img class="main-map__img" src="images/mobile-location@1x.png" srcset="images/mobile-location@2x.png 2x"
+          alt="cat energy" width="320" height="362">
+      </picture>
+      <h2 class="main-map__title">приглашаем к сотрудничеству дилеров!</h2>
+      <p class="main-map__text"> ул. Большая Конюшенная, д. 19/8</p>
+      <p class="main-map__text"> Санкт-Петербург</p>
     </div>
   </main>
   <footer class="main-footer">
-    <img src="#" alt="cat-energy лого">
+    <a class="main-footer__link" href="index.html">
+      <img src="#" alt="cat-energy лого">
+    </a>
     <ul class="main-footer__social-list">
       <li class="main-footer__social-item">
         <a class="main-footer__social-link main-footer__social-link--vk" href="#">
@@ -135,7 +170,8 @@
         </a>
       </li>
     </ul>
-    <img src="#" alt="html-academy лого">
+    <a href="https://htmlacademy.ru/intensive/adaptive">
+      <img src="#" alt="html-academy лого"></a>
   </footer>
 </body>
 

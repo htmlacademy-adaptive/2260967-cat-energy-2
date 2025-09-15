@@ -1,0 +1,29 @@
+.catalog-card {}
+
+.catalog-card__link {}
+
+.catalog-card__product-link {
+  text-decoration: none;
+}
+
+.catalog-card__product {
+  text-decoration: none;
+  color: $base-color-description-text;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog-card__specification-list {
+  list-style: none;
+}
+
+.catalog-card__specification-item {}
+
+.catalog-card__specification-text {text-decoration: none;
+  color: $base-color-description-text;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;}
