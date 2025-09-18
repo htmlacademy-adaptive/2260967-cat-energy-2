@@ -11,32 +11,40 @@
 
 <body>
   <main class="catalog-main">
-    <header class="catalog-header">
-       <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
-          srcset="icons/desktop-cat-logo.svg">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
-          srcset="icons/tablet-cat-logo.svg">
-        <img src="icons/mobile-cat-logo.svg" alt="cat energy" width="33" height="38">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml"
-          srcset="icons/desktop-letters-logo.svg">
-        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml"
-          srcset="icons/tablet-letters-logo.svg">
-        <img src="icons/mobile-letters-logo.svg" alt="cat energy" width="101" height="18">
-      </picture>
-      <nav class="catalog-nav">
-        <button class="catalog-nav__toggle">
+    <header class="main-header">
+      <div class="header-wrapper">
+        <a class="header-wrapper__logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
+              srcset="images/desktop-cat-logo.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
+              srcset="images/tablet-cat-logo.svg">
+            <img src="images/mobile-cat-logo.svg" alt="cat energy" width="33" height="38">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml"
+              srcset="images/desktop-letters-logo.svg">
+            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml"
+              srcset="images/tablet-letters-logo.svg">
+            <img src="images/mobile-letters-logo.svg" alt="cat energy" width="101" height="18">
+          </picture>
+        </a>
+        <button class="header-wrapper__toggle">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="catalog-nav__wrapper">
-          <ul class="catalog-nav__list">
-            <li class="catalog-nav__list-item"><a href="index.html" class="catalog-nav__link">Главная</a>
+      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item">
+              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
             </li>
-            <li class="catalog-nav__list-item  catalog-nav__list-item--active"> <a href="catalog.html">Каталог
-                продукции</a></li>
-            <li class="catalog-nav__list-item"> <a href="#"> Подбор программы</a></li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link" href="#">Подбор программы</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -200,13 +208,13 @@
 
       <div class="catalog-card">
         <picture>
-            <source media="(min-width: 1440px)" width="172" height="196" type="image/png"
-              srcset="images/desktop-can-buckweat-1000g@1x.png, images/desktop-can-buckweat-1000g@2x.png 2x">
-            <source media="(min-width: 768px)" width="161" height="171" type="image/png"
-              srcset="images/tablet-can-buckweat-1000g@1x.png, images/tablet-can-buckweat-1000g@2x.png 2x">
-            <img class="catalog-card_img" src="images/mobile-can-buckweat-1000g@1x.png"
-              alt="функциональное питание для котов slim 1000г" width="68" height="78">
-          </picture>
+          <source media="(min-width: 1440px)" width="172" height="196" type="image/png"
+            srcset="images/desktop-can-buckweat-1000g@1x.png, images/desktop-can-buckweat-1000g@2x.png 2x">
+          <source media="(min-width: 768px)" width="161" height="171" type="image/png"
+            srcset="images/tablet-can-buckweat-1000g@1x.png, images/tablet-can-buckweat-1000g@2x.png 2x">
+          <img class="catalog-card_img" src="images/mobile-can-buckweat-1000g@1x.png"
+            alt="функциональное питание для котов slim 1000г" width="68" height="78">
+        </picture>
         <a class="catalog-card__product-link" href="#">
           <h3 class="catalog-card__product">Cat Energy SLIM 1000 г</h3>
         </a>
@@ -292,6 +300,11 @@
         </li>
       </ul>
     </div>
+    <div class="catalog-gift">
+      <h2 class="catalog-gift__text">
+        Закажите все и получите чехол для кота в подарок!
+      </h2>
+    </div>
     <div class="promotions-subscribe">
       <h2 class="promotions-subscribe__title">Акции и новинки</h2>
       <div class="promotions-subscribe__form-wrapper">
@@ -318,23 +331,40 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__link" href="index.html">
-      <img src="#" alt="cat-energy лого">
+      <svg width="128" height="24">
+        <use href="icons/stack.svg#footer-cat-energy-logo"></use>
+      </svg>
     </a>
     <ul class="main-footer__social-list">
       <li class="main-footer__social-item">
         <a class="main-footer__social-link main-footer__social-link--vk" href="#">
+          <svg width="28" height="22">
+            <use href="icons/stack.svg#icon-vk"></use>
+          </svg>
         </a>
       </li>
       <li class="main-footer__social-item">
         <a class="main-footer__social-link main-footer__social-link--youtube" href="#">
+          <svg width="28" height="22">
+            <use href="icons/stack.svg#icon-youtube"></use>
+          </svg>
         </a>
       </li>
       <li class="main-footer__social-item">
         <a class="main-footer__social-link main-footer__social-link--tg" href="#">
+          <svg width="28" height="22">
+            <use href="icons/stack.svg#icon-tg"></use>
+          </svg>
         </a>
       </li>
     </ul>
     <a href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="#" alt="html-academy лого"></a>
+      <svg width="27" height="34">
+        <use href="icons/stack.svg#icon-htmlacademy-logo"></use>
+      </svg>
+      <svg width="113" height="20">
+        <use href="icons/stack.svg#icon-htmlacademy-letters"></use>
+      </svg>
+    </a>
   </footer>
 </body>

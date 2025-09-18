@@ -1,6 +1,14 @@
 .catalog-promo{
 
+  display: flex;
+  flex-direction: column;
 }
+
+@media(min-width: $desktop-width){
+ .catalog-promo{
+  flex-direction: row;
+}
+
 .catalog-promo-card{
 
 }

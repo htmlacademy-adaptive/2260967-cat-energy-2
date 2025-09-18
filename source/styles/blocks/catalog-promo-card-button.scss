@@ -1,0 +1,11 @@
+.catalog-promo-card-button::after {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 10px;
+  margin-left: 8px;
+  background-image: url("../../icons/stack.svg#icon-arrow");
+
+}
+
+.catalog-promo-card-button__link {}

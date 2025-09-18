@@ -1,0 +1,27 @@
+.catalog-gift {
+  background-color: $basic-green-button;
+}
+@media(min-width: $desktop-width){
+.catalog-gift {
+  display: none;
+}
+}
+.catalog-gift__text {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+}
+
+.catalog-gift__text::before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#icon-gift");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}

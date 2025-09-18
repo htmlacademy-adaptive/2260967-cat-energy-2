@@ -1,0 +1,15 @@
+.main-footer{
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: $tablet-width) {
+  .main-footer{
+  display: flex;
+  flex-direction: row;
+}
+}
+.main-footer__social-list{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}

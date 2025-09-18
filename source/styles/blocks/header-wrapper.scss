@@ -1,0 +1,19 @@
+.header-wrapper{
+  display: flex;
+  flex-direction: row;
+}
+.header-wrapper__logo {}
+
+.header-wrapper__toggle{
+  background-image: url("../../icons/stack.svg#icon-mobile-menu");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  border: none;
+  padding: 0;
+}
+@media (min-width: $tablet-width){
+.header-wrapper__toggle {
+  display: none;
+}
+}
