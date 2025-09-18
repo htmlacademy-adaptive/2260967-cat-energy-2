@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <title>Cat-energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,25 +12,27 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
-          srcset="icons/desktop-cat-logo.svg">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
-          srcset="icons/tablet-cat-logo.svg">
-        <img src="icons/mobile-cat-logo.svg" alt="cat energy" width="33" height="38">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml"
-          srcset="icons/desktop-letters-logo.svg">
-        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml"
-          srcset="icons/tablet-letters-logo.svg">
-        <img src="icons/mobile-letters-logo.svg" alt="cat energy" width="101" height="18">
-      </picture>
-    </a>
-    <button class="main-header__toggle">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
+    <div class="header-wrapper">
+      <a class="header-wrapper__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
+            srcset="images/desktop-cat-logo.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
+            srcset="images/tablet-cat-logo.svg">
+          <img src="images/mobile-cat-logo.svg" alt="cat energy" width="33" height="38">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml"
+            srcset="images/desktop-letters-logo.svg">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml"
+            srcset="images/tablet-letters-logo.svg">
+          <img src="images/mobile-letters-logo.svg" alt="cat energy" width="101" height="18">
+        </picture>
+      </a>
+      <button class="header-wrapper__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+    </div>
     <nav class="main-nav">
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
@@ -50,21 +53,19 @@
     <div class="main-promo">
       <h1 class="main-promo__title"> Функциональное питание для котов</h1>
       <p class="main-promo__description">Занялся собой? Займись котом!</p>
-      <picture>
+      <picture class="main-promo__picture">
         <source media="(min-width: 1440px)" width="552" height="499" type="image/png"
           srcset="images/desktop-index-can@1x.png, images/desktop-index-can@2x.png 2x">
         <source media="(min-width: 768px)" width="709" height="609" type="image/png"
           srcset="images/tablet-index-can@1x.png, images/tablet-index-can@2x.png 2x">
-        <img src="images/mobile-index-can@1x.png" alt="Питание для котов курица" width="280"
-          height="270">
+        <img src="images/mobile-index-can@1x.png" alt="Питание для котов курица" width="280" height="270">
       </picture>
 
-      <a href="#" class="button">Подобрать программу</a>
+      <a href="#" class="program-selection">Подобрать программу</a>
     </div>
     <div class="catalog-promo">
       <div class="catalog-promo-card">
-        <img src="/images/catalog-promo-card_img-cat-black.svg" alt="">
-        <h2 class="catalog-promo-card__title"> похудение</h2>
+        <h2 class="catalog-promo-card__title cat"> похудение</h2>
         <p class="catalog-promo-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
           деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </p>
@@ -74,7 +75,7 @@
       </div>
       <div class="catalog-promo-card">
         <img src="/images/catalog-promo-card_img-puma-black.svg" alt="">
-        <h2 class="catalog-promo-card__title"> Набор массы</h2>
+        <h2 class="catalog-promo-card__title panter"> Набор массы</h2>
         <p class="catalog-promo-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
           Energy Pro поможет вашему коту нарастить необходимые мышцы!
         </p>
@@ -86,21 +87,21 @@
     <div class="main-advantages">
       <h2 class="main-advantages__title">Как это работает</h2>
       <ul class="main-advantages-list">
-        <li>
+        <li class="main-advantages__item leaf">
           <p class="main-advantages-list__description">Функциональное питание содержит только полезные питательные
             вещества.</p>
         </li>
-        <li>
+        <li class="main-advantages__item bubbles">
           <p class="main-advantages-list__description">Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</p>
         </li>
-        <li>
+        <li class="main-advantages__item eat">
           <p class="main-advantages-list__description">Замените один-два приема
             обычной еды на наше
             функциональное питание.</p>
         </li>
-        <li>
+        <li class="main-advantages__item clock">
           <p class="main-advantages-list__description">Уже через месяц наслаждайтесь
             изменениями к лучшему
             вашего питомца!</p>
@@ -114,26 +115,32 @@
         без изнуряющих тренировок! При этом он не менял своих
         привычек и по-прежнему спит по 16 часов в день. </p>
       <div class="main-case-statistics">
-        <h2 class="main-case-statistics__stats"> 5 кг</h2>
-        <p class="main-case-statistics__description">снижение веса</p>
-        <h2 class="main-case-statistics__stats"> 60 дней</h2>
-        <p class="main-case-statistics__description">затрачено времени</p>
+        <ul class="main-case-statistics__list">
+          <li class="main-case-statistics__item">
+            <h2 class="main-case-statistics__stats"> 5 кг</h2>
+            <p class="main-case-statistics__description">снижение веса</p>
+          </li>
+          <li class="main-case-statistics__item">
+            <h2 class="main-case-statistics__stats"> 60 дней</h2>
+            <p class="main-case-statistics__description">затрачено времени</p>
+          </li>
+        </ul>
+        </div>
+        <p class="main-case__cost">Затраты на питание: 15 000 РУБ. </p>
         <div class="main-case-image-slider">
           <picture>
             <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
               srcset="images/tablet-cat-before@1x.png, images/tablet-cat-before@2x.png 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png"
               srcset="images/tablet-cat-before@1x.png, images/tablet-cat-before@2x.png 2x">
-            <img src="images/mobile-cat-before@1x.png" alt="Ваш кот до и после" width="280"
-              height="256">
+            <img src="images/mobile-cat-before@1x.png" alt="Ваш кот до и после" width="280" height="256">
           </picture>
           <picture>
             <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
               srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png"
               srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
-            <img src="images/mobile-cat-after@1x.png" alt="Ваш кот до и после" width="280"
-              height="256">
+            <img src="images/mobile-cat-after@1x.png" alt="Ваш кот до и после" width="280" height="256">
           </picture>
         </div>
       </div>
@@ -154,24 +161,41 @@
   </main>
   <footer class="main-footer">
     <a class="main-footer__link" href="index.html">
-      <img src="#" alt="cat-energy лого">
+      <svg width="128" height="24">
+        <use href="icons/stack.svg#footer-cat-energy-logo"></use>
+      </svg>
     </a>
     <ul class="main-footer__social-list">
       <li class="main-footer__social-item">
         <a class="main-footer__social-link main-footer__social-link--vk" href="#">
+          <svg width="28" height="22">
+            <use href="icons/stack.svg#icon-vk"></use>
+          </svg>
         </a>
       </li>
       <li class="main-footer__social-item">
         <a class="main-footer__social-link main-footer__social-link--youtube" href="#">
+          <svg width="28" height="22">
+            <use href="icons/stack.svg#icon-youtube"></use>
+          </svg>
         </a>
       </li>
       <li class="main-footer__social-item">
         <a class="main-footer__social-link main-footer__social-link--tg" href="#">
+          <svg width="28" height="22">
+            <use href="icons/stack.svg#icon-tg"></use>
+          </svg>
         </a>
       </li>
     </ul>
     <a href="https://htmlacademy.ru/intensive/adaptive">
-      <img src="#" alt="html-academy лого"></a>
+      <svg width="27" height="34">
+        <use href="icons/stack.svg#icon-htmlacademy-logo"></use>
+      </svg>
+      <svg width="113" height="20">
+        <use href="icons/stack.svg#icon-htmlacademy-letters"></use>
+      </svg>
+    </a>
   </footer>
 </body>
 

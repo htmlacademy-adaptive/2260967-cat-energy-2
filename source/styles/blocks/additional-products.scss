@@ -1,16 +1,34 @@
-.additional-products {}
+.additional-products {
+  display: flex;
+  flex-direction: column;
+}
 
 .additional-products__title {
-  color: #000;
+  color: #000000;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
 }
 
-.additional-products__list {}
+.additional-products__list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
 
-.additional-products__item {}
+.additional-products__item {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
 
 .additional-products__item-title {
   color: $base-color-description-text;

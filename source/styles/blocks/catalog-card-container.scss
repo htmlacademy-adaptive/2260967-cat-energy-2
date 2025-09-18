@@ -1,0 +1,15 @@
+.catalog-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 60px;
+
+  }
+}
+

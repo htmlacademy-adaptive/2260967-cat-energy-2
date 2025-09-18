@@ -1,17 +1,63 @@
-.main-promo{
-background-color: #68B738D9;
+.main-promo {
+  background-color: rgba(104, 183, 56, 0.85);
+  display: flex;
+  flex-direction: column;
 }
-.main-promo__title{
-font-family: "Oswald", sans-serif;
-font-weight: 400;
-font-size: 36px;
-line-height: 36px;
-color: #ffffff;
+
+.main-promo__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
 }
-.main-promo__description{
+
+@media(min-width: $tablet-width) {
+  .main-promo__title {
+    color: #000000;
+  }
+}
+
+.main-promo__description {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
+}
+
+@media(min-width: $tablet-width) {
+  .main-promo__description {
+    color: #000000;
+  }
+}
+
+@media(min-width: $tablet-width) {
+.main-promo__picture{
+  order:3;
+}
+}
+.program-selection {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  width: 280;
+  height: 40;
+  background-color: $basic-green-button;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+}
+
+@media(min-width: $tablet-width) {
+  .program-selection {
+    order: 2;
+    width: 242;
+    height: 54;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
