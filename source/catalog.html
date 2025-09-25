@@ -11,17 +11,19 @@
 
 <body>
   <main class="catalog-main">
-    <header class="main-header">
+    <header class="main-header header-wrapper--opened">
       <div class="header-wrapper">
         <a class="header-wrapper__logo" href="index.html">
-          <picture>
+          <picture class="header-wrapper__cat-logo">
             <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
               srcset="images/desktop-cat-logo.svg">
             <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml"
               srcset="images/tablet-cat-logo.svg">
             <img src="images/mobile-cat-logo.svg" alt="cat energy" width="33" height="38">
           </picture>
-          <picture>
+        </a>
+        <a class="header-wrapper__logo" href="index.html">
+          <picture class="header-wrapper__letters">
             <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml"
               srcset="images/desktop-letters-logo.svg">
             <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml"
@@ -29,15 +31,17 @@
             <img src="images/mobile-letters-logo.svg" alt="cat energy" width="101" height="18">
           </picture>
         </a>
-        <button class="header-wrapper__toggle">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="header-wrapper_toglewrap">
+          <button class="header-wrapper__toggle">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
       </div>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__link main-nav__link--active" href="index.html">Главная</a>
+              <a class="main-nav__link main-nav__link--active" href="#">Главная</a>
             </li>
             <li class="main-nav__list-item">
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
@@ -52,8 +56,8 @@
     <h1 class="catalog-main__title">Каталог продукции</h1>
     <div class="catalog-card-container">
       <div class="catalog-card">
-        <a class="catalog-card__link" href="#">
-          <picture>
+        <a class="catalog-card__img" href="#">
+          <picture class="catalog-card__picture">
             <source media="(min-width: 1440px)" width="161" height="172" type="image/png"
               srcset="images/desktop-can-chicken-500g@1x.png, images/desktop-can-chicken-500g@2x.png 2x">
             <source media="(min-width: 768px)" width="161" height="172" type="image/png"
@@ -83,7 +87,7 @@
       </div>
 
       <div class="catalog-card">
-        <a class="catalog-card__link" href="#">
+        <a class="catalog-card__img" href="#">
           <picture>
             <source media="(min-width: 1440px)" width="172" height="196" type="image/png"
               srcset="images/desktop-can-chicken-1000g@1x.png, images/desktop-can-chicken-1000g@2x.png 2x">
@@ -114,7 +118,7 @@
       </div>
 
       <div class="catalog-card">
-        <a class="catalog-card__link" href="#">
+        <a class="catalog-card__img" href="#">
           <picture>
             <source media="(min-width: 1440px)" width="163" height="174" type="image/png"
               srcset="images/desktop-can-fish-500g@1x.png, images/desktop-can-fish-500g@2x.png 2x">
@@ -145,7 +149,7 @@
       </div>
 
       <div class="catalog-card">
-        <a class="catalog-card__link" href="#">
+        <a class="catalog-card__img" href="#">
           <picture>
             <source media="(min-width: 1440px)" width="169" height="210" type="image/png"
               srcset="images/desktop-can-fish-1000g@1x.png, images/desktop-can-fish-1000g@2x.png 2x">
@@ -176,7 +180,7 @@
       </div>
 
       <div class="catalog-card">
-        <a class="catalog-card__link" href="#">
+        <a class="catalog-card__img" href="#">
           <picture>
             <source media="(min-width: 1440px)" width="169" height="210" type="image/png"
               srcset="images/desktop-can-buckweat-500g@1x.png, images/desktop-can-buckweat-500g@2x.png 2x">
@@ -207,14 +211,16 @@
       </div>
 
       <div class="catalog-card">
-        <picture>
-          <source media="(min-width: 1440px)" width="172" height="196" type="image/png"
-            srcset="images/desktop-can-buckweat-1000g@1x.png, images/desktop-can-buckweat-1000g@2x.png 2x">
-          <source media="(min-width: 768px)" width="161" height="171" type="image/png"
-            srcset="images/tablet-can-buckweat-1000g@1x.png, images/tablet-can-buckweat-1000g@2x.png 2x">
-          <img class="catalog-card_img" src="images/mobile-can-buckweat-1000g@1x.png"
-            alt="функциональное питание для котов slim 1000г" width="68" height="78">
-        </picture>
+        <a class="catalog-card__img" href="#">
+          <picture>
+            <source media="(min-width: 1440px)" width="172" height="196" type="image/png"
+              srcset="images/desktop-can-buckweat-1000g@1x.png, images/desktop-can-buckweat-1000g@2x.png 2x">
+            <source media="(min-width: 768px)" width="161" height="171" type="image/png"
+              srcset="images/tablet-can-buckweat-1000g@1x.png, images/tablet-can-buckweat-1000g@2x.png 2x">
+            <img class="catalog-card_img" src="images/mobile-can-buckweat-1000g@1x.png"
+              alt="функциональное питание для котов slim 1000г" width="68" height="78">
+          </picture>
+        </a>
         <a class="catalog-card__product-link" href="#">
           <h3 class="catalog-card__product">Cat Energy SLIM 1000 г</h3>
         </a>
@@ -236,8 +242,8 @@
       </div>
 
       <div class="catalog-card">
-        <a class="catalog-card__link" href="#">
-          <picture>
+        <a class="catalog-card__img" href="#">
+          <picture class="catalog-card__picture">
             <source media="(min-width: 1440px)" width="163" height="174" type="image/png"
               srcset="images/desktop-can-rice-500g@1x.png, images/desktop-can-rice-500g@2x.png 2x">
             <source media="(min-width: 768px)" width="163" height="174" type="image/png"
@@ -270,6 +276,7 @@
         <p class="catalog-card-more__text">На самом деле вкусов гораздо больше!</p>
         <a href="#" class="button more-button">показать все</a>
       </div>
+
     </div>
     <div class="additional-products">
       <h2 class="additional-products__title">Дополнительные товары</h2>

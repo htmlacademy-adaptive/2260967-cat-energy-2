@@ -1,19 +1,110 @@
-.header-wrapper{
+.header-wrapper {
   display: flex;
   flex-direction: row;
 }
+
 .header-wrapper__logo {}
 
-.header-wrapper__toggle{
-  background-image: url("../../icons/stack.svg#icon-mobile-menu");
-  background-repeat: no-repeat;
+.header-wrapper_toglewrap {
+  display: block;
+  padding: 20px 21px 21px 0px;
+}
+
+.header-wrapper__toggle {
+  background-color: #fff;
   width: 24px;
   height: 24px;
-  border: none;
   padding: 0;
+  position: relative;
+  border: none;
 }
 @media (min-width: $tablet-width){
-.header-wrapper__toggle {
+  .header-wrapper_toglewrap {
   display: none;
+
+}
+}
+
+.header-wrapper--closed .header-wrapper__toggle::before {
+  content: "";
+  background-color: #000;
+  width: 24px;
+  height: 2px;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  box-shadow: 0 8px #000, 0 16px #000;
+}
+
+.header-wrapper--opened .header-wrapper__toggle {
+
+  &::before,
+  &::after {
+    content: "";
+    background-color: #000000;
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: opacify(#000000, 0.3);
+  }
+}
+
+@media (max-width:$mobile-width-only) {
+  .header-wrapper--closed .main-nav {
+    display: none;
+  }
+}
+
+.header-wrapper__cat-logo {
+  display: block;
+  padding: 13px 56px 14px 20px;
+  box-sizing: border-box;
+}
+@media (min-width: $tablet-width){
+  .header-wrapper__cat-logo {
+  display: block;
+  padding: 25px 13px 0px 30px;
+  box-sizing: border-box;
+}
+}
+@media (min-width: $desktop-width){
+  .header-wrapper__cat-logo {
+  display: block;
+  padding: 55px 0px 0px 110px;
+  box-sizing: border-box;
+}
+}
+.header-wrapper__letters {
+  display: block;
+  padding: 23px 65px 24px 0px;
+  box-sizing: border-box;
+}
+@media (min-width: $tablet-width){
+  .header-wrapper__letters {
+  display: block;
+  padding: 41px 94px 0px 13px;
+  box-sizing: border-box;
+}
+}
+@media (min-width: $desktop-width){
+  .header-wrapper__letters {
+  display: block;
+  padding: 74px 0px 0px 0px;
+  box-sizing: border-box;
 }
 }
