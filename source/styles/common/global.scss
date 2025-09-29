@@ -18,3 +18,12 @@ body {
 li{
   list-style-type: none;
 }
+
+br{
+display: none;
+}
+@media(min-width: $tablet-width){
+ br{
+display: block;
+}
+}

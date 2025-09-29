@@ -11,11 +11,16 @@
   height: 40px;
   border: none;
   box-sizing: border-box;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 10px 109px;
 }
 @media (min-width: $tablet-width){
   .order-button{
   width: 250px;
   height: 40px;
+  grid-area: 4 / 1 / 5 / 2;
+  padding: 10px 93px;
   }
 }
 @media (min-width: $desktop-width){
@@ -23,5 +28,6 @@
   width: 169px;
   height: 40px;
   align-self: anchor-center;
+  padding: 10px 53px;
   }
 }

@@ -5,20 +5,29 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 65px;
-}
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 75px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-header {
-  display: flex;
-  flex-direction: row;
-  z-index: 1;
-  height: 142px;
-  background: linear-gradient(90deg, #0000 50%, #68b738d9 50%);
-  position: relative;
-
+    display: flex;
+    flex-direction: row;
+    z-index: 1;
+    height: 142px;
+    position: relative;
+    margin: 0;
+  }
 }
+
+@media (min-width: $desktop-width) {
+  .main-header--index {
+    background: linear-gradient(90deg, #0000 50%, #68b738d9 50%);
+  }
+
+  .main-header--index .main-nav__link {
+    color:#ffffff;
+  }
 }

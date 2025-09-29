@@ -11,9 +11,9 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header header-wrapper--closed">
+  <header class="main-header main-header--index header-wrapper--closed">
     <div class="header-wrapper">
-      <a class="header-wrapper__logo" href="index.html">
+      <a href="index.html">
         <picture class="header-wrapper__cat-logo">
           <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml"
             srcset="images/desktop-cat-logo.svg">
@@ -116,48 +116,60 @@
         </li>
       </ul>
     </div>
-    <div class="main-case">
-      <h2 class="main-case__title">Живой пример</h2>
-      <p class="main-case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
-        обычный корм на Cat Energy Slim. <br> Отличный результат
-        без изнуряющих тренировок! При этом он не менял своих
-        привычек и по-прежнему спит по 16 часов в день. </p>
-      <div class="main-case-statistics">
-        <ul class="main-case-statistics__list">
-          <li class="main-case-statistics__item">
-            <h2 class="main-case-statistics__stats"> 5 кг</h2>
-            <p class="main-case-statistics__description">снижение веса</p>
-          </li>
-          <li class="main-case-statistics__item">
-            <h2 class="main-case-statistics__stats"> 60 дней</h2>
-            <p class="main-case-statistics__description">затрачено времени</p>
-          </li>
-        </ul>
-        <p class="main-case__cost">Затраты на питание: <br>15 000 РУБ. </p>
+    <div class="main-case-background">
+      <div class="main-case content-limiter">
+        <h2 class="main-case__title">Живой пример</h2>
+        <p class="main-case__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой
+          обычный корм на Cat Energy Slim. Отличный результат
+          без изнуряющих тренировок! При этом он не менял своих
+          привычек и по-прежнему спит по 16 часов в день. </p>
+        <div class="main-case-statistics">
+          <ul class="main-case-statistics__list">
+            <li class="main-case-statistics__item">
+              <div class="main-case-statistics__border">
+                <p class="main-case-statistics__stats"> 5 кг</p>
+              </div>
+              <p class="main-case-statistics__description">снижение веса</p>
+            </li>
+            <li class="main-case-statistics__item">
+              <div class="main-case-statistics__border">
+                <p class="main-case-statistics__stats"> 60 дней</p>
+              </div>
+              <p class="main-case-statistics__description">затрачено времени</p>
+            </li>
+          </ul>
+          <div class="main-case__cost-wrapper">
+            <p class="main-case__cost">Затраты на питание: </p>
+            <p class="main-case__cost"> 15 000 РУБ. </p>
+          </div>
+        </div>
+        <div class="main-case-image-slider ">
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
+              srcset="images/tablet-cat-before@1x.png, images/tablet-cat-before@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png"
+              srcset="images/tablet-cat-before@1x.png, images/tablet-cat-before@2x.png 2x">
+            <img src="images/mobile-cat-before@1x.png" alt="Ваш кот до и после" width="280" height="256">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
+              srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png"
+              srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
+            <img src="images/mobile-cat-after@1x.png" alt="Ваш кот до и после" width="280" height="256">
+          </picture>
+        </div>
       </div>
 
-      <div class="main-case-image-slider">
-        <!-- <picture>
-          <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
-            srcset="images/tablet-cat-before@1x.png, images/tablet-cat-before@2x.png 2x">
-          <source media="(min-width: 768px)" width="560" height="512" type="image/png"
-            srcset="images/tablet-cat-before@1x.png, images/tablet-cat-before@2x.png 2x">
-          <img src="images/mobile-cat-before@1x.png" alt="Ваш кот до и после" width="280" height="256">
-        </picture> -->
-        <picture>
-          <source media="(min-width: 1440px)" width="560" height="512" type="image/png"
-            srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
-          <source media="(min-width: 768px)" width="560" height="512" type="image/png"
-            srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
-          <img src="images/mobile-cat-after@1x.png" alt="Ваш кот до и после" width="280" height="256">
-        </picture>
-      </div>
     </div>
     </div>
     <div class="main-map">
       <div class="main-map__wrapper">
-        <h2 class="main-map__title">приглашаем к сотрудничеству дилеров!</h2>
-        <p class="main-map__text"> ул. Большая Конюшенная, д. 19/8 <br>Санкт-Петербург</p>
+        <h2 class="main-map__title">приглашаем к&nbsp;сотрудничеству дилеров!</h2>
+        <div class="main-map__text-wrapper">
+          <p class="main-map__text"> ул. Большая Конюшенная, д. 19/8 </p>
+          <p class="main-map__text">Санкт-Петербург</p>
+        </div>
       </div>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1758610365186!5m2!1sru!2sru"

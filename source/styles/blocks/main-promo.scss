@@ -16,7 +16,8 @@
     background-color: #ffffff;
     background-image: none;
     margin: 0;
-    padding-top: 65px;
+   padding: 0;
+   margin-bottom: -3px;
   }
 }
 
@@ -33,11 +34,11 @@
     content: "";
     position: absolute;
     top: auto;
-    bottom: 0;
+    left: 50%;
     right: 0;
-    width: 50%;
     height: 694px;
-    background: url("../../../images/index-background-desktop 1@2x.png") no-repeat right center;
+    bottom: 0;
+    background: url("../../../images/desktop-cat-main-background@2x.png");
     background-size: cover;
     z-index: -2;
   }
@@ -57,6 +58,7 @@
     grid-template-columns: 416px auto;
     grid-template-rows: min-content min-content min-content;
     align-items: start;
+    padding-left: 80px;
   }
 }
 
@@ -83,6 +85,7 @@
     padding-left: 90px;
     padding-bottom: 40px;
     text-align: start;
+
   }
 }
 
@@ -112,6 +115,7 @@
   padding: 0;
   padding-bottom: 29px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 @media(min-width: $tablet-width) {
@@ -160,7 +164,7 @@
   text-align: center;
   padding: 10px 64px;
   box-sizing: border-box;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 @media(min-width: $tablet-width) {
@@ -199,6 +203,6 @@
 @media(min-width: $desktop-width) {
   .main-promo__picture {
     grid-area: 1 / 2 / -1 / -1;
-
+    margin-left: -49px;
   }
 }

@@ -18,17 +18,7 @@
     flex-direction: row;
     column-gap: 80px;
     padding: 0;
-    padding-left: 110px;
-    padding-right: 110px;
     padding-top: 82px;
-  }
-}
-
-@media(min-width: $desktop-width) {
-  .catalog-promo.content-limiter {
-    margin: 0;
-    max-width: none;
-    width: fit-content;
-    padding-bottom: 71px;
+     margin-bottom: 71px;
   }
 }

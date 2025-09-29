@@ -5,7 +5,6 @@
 @media (min-width: $desktop-width) {
   .main-map {
     position: relative;
-
   }
 }
 
@@ -14,25 +13,40 @@
   flex-direction: row;
 }
 
+
 @media (min-width: $desktop-width) {
   .main-map__wrapper {
     padding: 60px 78px 60px 80px;
     position: absolute;
     background-color: #ffffff;
     box-sizing: border-box;
-    gap: 87px;
+    gap: 80px;
     top: 95px;
     left: 110px;
   }
 
 }
-
-
+.main-map__catalog-wrapper{
+  display: flex;
+  flex-direction: row;
+}
 .main-map iframe {
   width: 100%;
   min-height: 362px;
   border: 0;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .main-map iframe {
+    min-height: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-map iframe {
+    max-width: 1440px;
+  }
 }
 
 .main-map__title {
@@ -69,14 +83,38 @@
   }
 }
 
+.main-map__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding: 26px 20px 26px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .main-map__text-wrapper {
+    padding: 60px 70px 60px 0;
+    text-align: end;
+    gap: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-map__text-wrapper {
+    padding: 0;
+    text-align: left;
+    gap: 20px;
+  }
+}
+
 .main-map__text {
   font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
-  padding: 26px 0px 26px 20px;
   margin: 0;
+  min-width: 140px;
 }
 
 @media (min-width: $tablet-width) {
@@ -84,8 +122,9 @@
     font-size: 16px;
     line-height: 20px;
     color: #444444;
-    padding: 60px 70px 60px 0px;
+    padding: 0;
     margin: 0;
+    min-width: 170px;
   }
 }
 
