@@ -4,15 +4,21 @@
   height: 65px;
 }
 
-@media (min-width: $desktop-width) {
-  .header-wrapper__logo img {
-    margin-left: 14px;
-  }
+.header-wrapper__logo:hover {
+  opacity: 60%;
 }
 
-.header-wrapper_toglewrap {
+.header-wrapper__logo:active {
+  opacity: 40%;
+}
+
+.header-wrapper__toglewrap {
   display: block;
   padding: 20px 21px 21px 0px;
+}
+
+.header-wrapper__toglewrap--nojs {
+  display: none;
 }
 
 .header-wrapper__toggle {
@@ -25,9 +31,8 @@
 }
 
 @media (min-width: $tablet-width) {
-  .header-wrapper_toglewrap {
+  .header-wrapper__toglewrap {
     display: none;
-
   }
 }
 
@@ -78,14 +83,14 @@
 
 .header-wrapper__cat-logo {
   display: block;
-  padding: 13px 56px 14px 20px;
+  padding: 13px 56px 14px 0;
   box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
   .header-wrapper__cat-logo {
     display: block;
-    padding: 25px 13px 0px 30px;
+    padding: 25px 13px 0px 0px;
     box-sizing: border-box;
   }
 }
@@ -93,14 +98,14 @@
 @media (min-width: $desktop-width) {
   .header-wrapper__cat-logo {
     display: block;
-    padding: 55px 0px 0px 110px;
+    padding: 55px 0px 0px 0px;
     box-sizing: border-box;
   }
 }
 
 .header-wrapper__letters {
   display: block;
-  padding: 23px 65px 24px 0px;
+  padding: 20px 65px 24px 0;
   box-sizing: border-box;
   margin-top: 3px;
 }
@@ -108,7 +113,7 @@
 @media (min-width: $tablet-width) {
   .header-wrapper__letters {
     display: block;
-    padding: 41px 94px 0px 0px;
+    padding: 38px 94px 0 0;
     box-sizing: border-box;
   }
 }
@@ -116,7 +121,7 @@
 @media (min-width: $desktop-width) {
   .header-wrapper__letters {
     display: block;
-    padding: 74px 0px 0px 0px;
+    padding: 70px 12px 0;
     box-sizing: border-box;
   }
 }

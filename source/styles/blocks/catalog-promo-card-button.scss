@@ -36,7 +36,10 @@
     margin-left: 25px;
   }
 }
-
+.catalog-promo-card-button:hover::after{
+  background-image: url("../../icons/stack.svg#icon-arrow-hover");
+  opacity: 60%;
+}
 .catalog-promo-card-button__link {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -49,6 +52,12 @@
   vertical-align: bottom;
 }
 
+.catalog-promo-card-button__link:hover{
+  opacity: 60%;
+}
+.catalog-promo-card-button__link:hover{
+  opacity: 30%;
+}
 @media(min-width: $tablet-width) {
   .catalog-promo-card-button__link {
     font-size: 20px;
@@ -58,7 +67,6 @@
     text-decoration: none;
     vertical-align: bottom;
     margin: 0;
-
   }
 
 }

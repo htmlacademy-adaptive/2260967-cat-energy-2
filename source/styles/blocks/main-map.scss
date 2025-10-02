@@ -8,6 +8,41 @@
   }
 }
 
+.main-map__img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.main-map--no-js {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.main-map--js {
+  display: none;
+}
+
+.main-map--frame-hidden {
+  display: none;
+}
+
+.main-map--frame-shown {
+  width: 100%;
+  height: 362px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .main-map--frame-shown {
+    height: 400px;
+  }
+}
+
 .main-map__wrapper {
   display: flex;
   flex-direction: row;
@@ -26,28 +61,12 @@
   }
 
 }
-.main-map__catalog-wrapper{
+
+.main-map__catalog-wrapper {
   display: flex;
   flex-direction: row;
 }
-.main-map iframe {
-  width: 100%;
-  min-height: 362px;
-  border: 0;
-  display: block;
-}
 
-@media (min-width: $tablet-width) {
-  .main-map iframe {
-    min-height: 400px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .main-map iframe {
-    max-width: 1440px;
-  }
-}
 
 .main-map__title {
   font-family: "Oswald", sans-serif;

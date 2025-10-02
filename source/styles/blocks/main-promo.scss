@@ -16,8 +16,8 @@
     background-color: #ffffff;
     background-image: none;
     margin: 0;
-   padding: 0;
-   margin-bottom: -3px;
+    padding: 0;
+    margin-bottom: -3px;
   }
 }
 
@@ -165,6 +165,15 @@
   padding: 10px 64px;
   box-sizing: border-box;
   margin-bottom: 20px;
+}
+
+.program-selection:hover {
+  background-color: $basic-green-2;
+}
+
+.program-selection:active {
+  background-color: $basic-green-2;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 @media(min-width: $tablet-width) {

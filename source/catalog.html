@@ -11,7 +11,7 @@
 
 <body>
   <main class="catalog-main">
-    <header class="main-header header-wrapper--opened">
+    <header class="main-header header-wrapper--opened content-limiter">
       <div class="header-wrapper">
         <a class="header-wrapper__logo" href="index.html">
           <picture class="header-wrapper__cat-logo">
@@ -31,20 +31,20 @@
             <img src="images/mobile-letters-logo.svg" alt="cat energy" width="101" height="18">
           </picture>
         </a>
-        <div class="header-wrapper_toglewrap">
+        <div class="header-wrapper__toglewrap header-wrapper__toglewrap--nojs">
           <button class="header-wrapper__toggle">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
-              <a class="main-nav__link " href="index.html">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__list-item main-nav__link--active">
-              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
+            <li class="main-nav__list-item">
+              <a class="main-nav__link catalog-nav__link--active" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__list-item">
               <a class="main-nav__link" href="#">Подбор программы</a>
@@ -53,16 +53,24 @@
         </div>
       </nav>
     </header>
-    <h1 class="catalog-main__title">Каталог продукции</h1>
-    <div class="catalog-card-container">
+    <h1 class="catalog-main__title content-limiter">Каталог продукции</h1>
+    <div class="catalog-card-container content-limiter">
       <div class="catalog-card">
         <a class="catalog-card__img" href="#">
           <picture class="catalog-card__picture">
+            <source media="(min-width: 1440px)" width="161" height="172" type="image/webp"
+              srcset="images/desktop-can-chicken-500g@1x.webp, images/desktop-can-chicken-500g@2x.webp 2x">
+            <source media="(min-width: 768px)" width="161" height="172" type="image/webp"
+              srcset="images/tablet-can-chicken-500g@1x.webp, images/tablet-can-chicken-500g@2x.webp 2x">
+            <source  width="68" height="86" type="image/webp"
+              srcset="images/mobile-can-chicken-500g@1x.webp, images/mobile-can-chicken-500g@2x.webp 2x">
+
+
             <source media="(min-width: 1440px)" width="161" height="172" type="image/png"
               srcset="images/desktop-can-chicken-500g@1x.png, images/desktop-can-chicken-500g@2x.png 2x">
             <source media="(min-width: 768px)" width="161" height="172" type="image/png"
               srcset="images/tablet-can-chicken-500g@1x.png, images/tablet-can-chicken-500g@2x.png 2x">
-            <img class="catalog-card_img" src="images/mobile-can-chicken-500g@1x.png"
+            <img src="images/mobile-can-chicken-500g@1x.png"
               alt="функциональное питание для котов курица 500г" width="68" height="86">
           </picture>
         </a>
@@ -89,11 +97,18 @@
       <div class="catalog-card">
         <a class="catalog-card__img" href="#">
           <picture class="catalog-card__picture">
+            <source media="(min-width: 1440px)" width="172" height="196" type="image/webp"
+              srcset="images/desktop-can-chicken-1000g@1x.webp, images/desktop-can-chicken-1000g@2x.webp 2x">
+            <source media="(min-width: 768px)" width="168" height="206" type="image/webp"
+              srcset="images/tablet-can-chicken-1000g@1x.webp, images/tablet-can-chicken-1000g@2x.webp 2x">
+            <source width="84" height="100" type="image/webp"
+              srcset="images/mobile-can-chicken-1000g@1x.webp, images/mobile-can-chicken-1000g@2x.webp 2x">
+
             <source media="(min-width: 1440px)" width="172" height="196" type="image/png"
               srcset="images/desktop-can-chicken-1000g@1x.png, images/desktop-can-chicken-1000g@2x.png 2x">
             <source media="(min-width: 768px)" width="168" height="206" type="image/png"
               srcset="images/tablet-can-chicken-1000g@1x.png, images/tablet-can-chicken-1000g@2x.png 2x">
-            <img class="catalog-card_img" src="images/mobile-can-chicken-1000g@1x.png"
+            <img src="images/mobile-can-chicken-1000g@1x.png"
               alt="функциональное питание для котов курица 1000г" width="84" height="100">
           </picture>
         </a>
@@ -120,11 +135,18 @@
       <div class="catalog-card">
         <a class="catalog-card__img" href="#">
           <picture class="catalog-card__picture">
+            <source media="(min-width: 1440px)" width="163" height="174" type="image/webp"
+              srcset="images/desktop-can-fish-500g@1x.webp, images/desktop-can-fish-500g@2x.webp 2x">
+            <source media="(min-width: 768px)" width="163" height="174" type="image/webp"
+              srcset="images/tablet-can-fish-500g@1x.webp, images/tablet-can-fish-500g@2x.webp 2x">
+            <source width="84" height="100" type="image/webp"
+              srcset="images/mobile-can-fish-500g@1x.webp, images/mobile-can-fish-500g@2x.webp 2x">
+
             <source media="(min-width: 1440px)" width="163" height="174" type="image/png"
               srcset="images/desktop-can-fish-500g@1x.png, images/desktop-can-fish-500g@2x.png 2x">
             <source media="(min-width: 768px)" width="163" height="174" type="image/png"
               srcset="images/tablet-can-fish-500g@1x.png, images/tablet-can-fish-500g@2x.png 2x">
-            <img class="catalog-card_img" src="images/mobile-can-fish-500g@1x.png"
+            <img src="images/mobile-can-fish-500g@1x.png"
               alt="функциональное питание для котов рыба 500г" width="84" height="100">
           </picture>
         </a>
@@ -151,11 +173,18 @@
       <div class="catalog-card">
         <a class="catalog-card__img" href="#">
           <picture class="catalog-card__picture">
+            <source media="(min-width: 1440px)" width="169" height="210" type="image/webp"
+              srcset="images/desktop-can-fish-1000g@1x.webp, images/desktop-can-fish-1000g@2x.webp 2x">
+            <source media="(min-width: 768px)" width="168" height="200" type="image/webp"
+              srcset="images/tablet-can-fish-1000g@1x.webp, images/tablet-can-fish-1000g@2x.webp 2x">
+            <source width="84" height="100" type="image/webp"
+              srcset="images/mobile-can-fish-1000g@1x.webp, images/mobile-can-fish-1000g@2x.webp 2x">
+
             <source media="(min-width: 1440px)" width="169" height="210" type="image/png"
               srcset="images/desktop-can-fish-1000g@1x.png, images/desktop-can-fish-1000g@2x.png 2x">
             <source media="(min-width: 768px)" width="168" height="200" type="image/png"
               srcset="images/tablet-can-fish-1000g@1x.png, images/tablet-can-fish-1000g@2x.png 2x">
-            <img class="catalog-card_img" src="images/mobile-can-fish-1000g@1x.png"
+            <img src="images/mobile-can-fish-1000g@1x.png"
               alt="функциональное питание для котов рыба 1000г" width="84" height="100">
           </picture>
         </a>
@@ -182,11 +211,18 @@
       <div class="catalog-card">
         <a class="catalog-card__img" href="#">
           <picture class="catalog-card__picture">
+            <source media="(min-width: 1440px)" width="169" height="210" type="image/webp"
+              srcset="images/desktop-can-buckweat-500g@1x.webp, images/desktop-can-buckweat-500g@2x.webp 2x">
+            <source media="(min-width: 768px)" width="161" height="171" type="image/webp"
+              srcset="images/tablet-can-buckweat-500g@1x.webp, images/tablet-can-buckweat-500g@2x.webp 2x">
+            <source width="68" height="78" type="image/webp"
+              srcset="images/mobile-can-buckweat-500g@1x.webp, images/mobile-can-buckweat-500g@2x.webp 2x">
+
             <source media="(min-width: 1440px)" width="169" height="210" type="image/png"
               srcset="images/desktop-can-buckweat-500g@1x.png, images/desktop-can-buckweat-500g@2x.png 2x">
             <source media="(min-width: 768px)" width="161" height="171" type="image/png"
               srcset="images/tablet-can-buckweat-500g@1x.png, images/tablet-can-buckweat-500g@2x.png 2x">
-            <img class="catalog-card_img" src="images/tablet-can-buckweat-500g@1x.png"
+            <img  src="images/tablet-can-buckweat-500g@1x.png"
               alt="функциональное питание для котов slim 500г" width="68" height="78">
           </picture>
         </a>
@@ -213,11 +249,19 @@
       <div class="catalog-card">
         <a class="catalog-card__img" href="#">
           <picture class="catalog-card__picture">
+            <source media="(min-width: 1440px)" width="172" height="196" type="image/webp"
+              srcset="images/desktop-can-buckweat-1000g@1x.webp, images/desktop-can-buckweat-1000g@2x.webp 2x">
+            <source media="(min-width: 768px)" width="168" height="200" type="image/webp"
+              srcset="images/tablet-can-buckweat-1000g@1x.webp, images/tablet-can-buckweat-1000g@2x.webp 2x">
+            <source width="84" height="100" type="image/webp"
+              srcset="images/mobile-can-buckweat-1000g@1x.webp, images/mobile-can-buckweat-1000g@2x.webp 2x">
+
+
             <source media="(min-width: 1440px)" width="172" height="196" type="image/png"
               srcset="images/desktop-can-buckweat-1000g@1x.png, images/desktop-can-buckweat-1000g@2x.png 2x">
             <source media="(min-width: 768px)" width="168" height="200" type="image/png"
               srcset="images/tablet-can-buckweat-1000g@1x.png, images/tablet-can-buckweat-1000g@2x.png 2x">
-            <img class="catalog-card_img" src="images/mobile-can-buckweat-1000g@1x.png"
+            <img src="images/mobile-can-buckweat-1000g@1x.png"
               alt="функциональное питание для котов slim 1000г" width="84" height="100">
           </picture>
         </a>
@@ -244,11 +288,19 @@
       <div class="catalog-card">
         <a class="catalog-card__img" href="#">
           <picture class="catalog-card__picture">
-            <source media="(min-width: 1440px)" width="163" height="174" type="image/png"
+            <source media="(min-width: 1440px)" width="169" height="210" type="image/webp"
+              srcset="images/desktop-can-rice-500g@1x.webp, images/desktop-can-rice-500g@2x.webp 2x">
+            <source media="(min-width: 768px)" width="200" height="210" type="image/webp"
+              srcset="images/tablet-can-rice-500g@1x.webp, images/tablet-can-rice-500g@2x.webp 2x">
+            <source width="72" height="84" type="image/webp"
+              srcset="images/mobile-can-rice-500g@1x.webp, images/mobile-can-rice-500g@2x.webp 2x">
+
+
+            <source media="(min-width: 1440px)" width="169" height="210" type="image/png"
               srcset="images/desktop-can-rice-500g@1x.png, images/desktop-can-rice-500g@2x.png 2x">
             <source media="(min-width: 768px)" width="200" height="210" type="image/png"
               srcset="images/tablet-can-rice-500g@1x.png, images/tablet-can-rice-500g@2x.png 2x">
-            <img class="catalog-card_img" src="images/mobile-can-rice-500g@1x.png"
+            <img src="images/mobile-can-rice-500g@1x.png"
               alt="функциональное питание для котов slim рис 500г" width="72" height="84">
           </picture>
         </a>
@@ -278,7 +330,7 @@
       </div>
 
     </div>
-    <div class="additional-products">
+    <div class="additional-products content-limiter">
       <h2 class="additional-products__title">Дополнительные товары</h2>
       <ul class="additional-products__list">
         <li class="additional-products__item">
@@ -314,12 +366,13 @@
           <a href="#" class="button additional-products__order-button">заказать</a>
         </li>
       </ul>
+      <div class="catalog-gift">
+        <p class="catalog-gift__text">
+          Закажите все и&nbsp;pполучите чехол для кота в подарок!
+        </p>
+      </div>
     </div>
-    <div class="catalog-gift">
-      <p class="catalog-gift__text">
-        Закажите все и&nbspполучите чехол для кота в подарок!
-      </p>
-    </div>
+
     <div class="promotions-subscribe content-limiter">
       <h2 class="promotions-subscribe__title">Акции и новинки</h2>
       <p class="promotions-subscribe__text"> Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
@@ -339,7 +392,7 @@
           <p class="main-map__text">Санкт-Петербург</p>
         </div>
       </div>
-      <picture>
+      <picture class="main-map--no-js">
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
           srcset="images/desktop-location@1x.png, images/desktop-location@2x.png 2x">
         <source media="(min-width: 768px)" width="768" height="400" type="image/png"
@@ -347,11 +400,16 @@
         <img class="main-map__img" src="images/mobile-location@1x.png" srcset="images/mobile-location@2x.png 2x"
           alt="cat energy" width="320" height="362">
       </picture>
+      <iframe class="main-map--frame-hidden"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991032728616!2d30.3230833!3d59.9387942!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5afc31%3A0xa24b26c0d196de71!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1758610365186!5m2!1sru!2sru"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
 
     </div>
   </main>
   <footer class="main-footer">
-    <div class="main-footer_items content-limiter">
+    <div class="main-footer__items content-limiter">
       <a class="main-footer__link" href="index.html">
         <svg width="128" height="24">
           <use href="icons/stack.svg#footer-cat-energy-logo"></use>
@@ -360,38 +418,22 @@
       <ul class="main-footer__social-list">
         <li class="main-footer__social-item">
           <a class="main-footer__social-link main-footer__social-link--vk" href="#">
-            <svg width="28" height="22">
-              <use href="icons/stack.svg#icon-vk"></use>
-            </svg>
           </a>
         </li>
         <li class="main-footer__social-item">
           <a class="main-footer__social-link main-footer__social-link--youtube" href="#">
-            <svg width="28" height="22">
-              <use href="icons/stack.svg#icon-youtube"></use>
-            </svg>
           </a>
         </li>
         <li class="main-footer__social-item">
           <a class="main-footer__social-link main-footer__social-link--tg" href="#">
-            <svg width="28" height="22">
-              <use href="icons/stack.svg#icon-tg"></use>
-            </svg>
           </a>
         </li>
       </ul>
       <div class="main-footer__academy-wrapper">
-        <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive"></a>
           <svg width="113" height="20">
-            <use href="icons/stack.svg#icon-htmlacademy-letters"></use>
-          </svg>
-        </a>
-        <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg width="27" height="34">
-            <use href="icons/stack.svg#icon-htmlacademy-logo"></use>
-          </svg>
-        </a>
-
+            <use href="icons/stack.svg#icon-htmlacademy-letters">
+              </use></svg>
       </div>
     </div>
   </footer>
