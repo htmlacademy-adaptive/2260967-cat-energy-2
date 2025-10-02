@@ -41,8 +41,9 @@
   left: 0;
   top: 64px;
 }
-@media (min-width: $desktop-width){
-  .main-nav--nojs{
+
+@media (min-width: $desktop-width) {
+  .main-nav--nojs {
     display: flex;
     flex-direction: row;
     z-index: 1;
