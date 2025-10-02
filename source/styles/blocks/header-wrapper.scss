@@ -47,7 +47,7 @@
   box-shadow: 0 8px #000000, 0 16px #000000;
 }
 
-.header-wrapper--opened .header-wrapper__toggle {
+.main-header--opened .header-wrapper__toggle {
   &::before,
   &::after {
     content: "";
