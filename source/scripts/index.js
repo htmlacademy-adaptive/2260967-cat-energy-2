@@ -2,7 +2,6 @@
 const navMain = document.querySelector('header');
 const navToggle = document.querySelector('.header-wrapper__toggle');
 const navig = document.querySelector('.main-nav');
-const nojs = document.querySelector('.main-nav--nojs');
 const toggle = document.querySelector('.header-wrapper__toglewrap');
 const mainmapimg = document.querySelector('.main-map--no-js');
 const mainmapframe = document.querySelector('.main-map--frame-hidden');
