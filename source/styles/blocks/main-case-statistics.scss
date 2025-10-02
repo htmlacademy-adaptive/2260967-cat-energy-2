@@ -19,8 +19,7 @@
   .main-case-statistics {
     grid-area: 3 / 1 / 4 / 2;
     margin: 0;
-    flex-wrap: wrap;
-    flex-direction: column;
+    flex-flow: column wrap;
     gap: 50px;
   }
 }
@@ -28,7 +27,6 @@
 .main-case-statistics__list {
   display: flex;
   flex-direction: row;
-  margin: 0;
   gap: 32px;
   padding: 0;
   margin: 0;
@@ -40,7 +38,6 @@
     display: flex;
     gap: 43px;
     margin: 0;
-    padding: 0;
     list-style: none;
     width: fit-content;
     flex-grow: 1;
@@ -67,8 +64,7 @@
   text-transform: uppercase;
   color: #000000;
   margin: 0;
-  padding: 0;
-  padding: 12px 0px 16px 0px;
+  padding: 12px 0 16px;
   text-align: center;
   white-space: nowrap;
   width: 124px;
@@ -77,8 +73,7 @@
 @media (min-width: $tablet-width) {
   .main-case-statistics__stats {
     margin: 0;
-    padding: 0;
-    padding: 15px 0px 8px 0px;
+    padding: 15px 0 8px;
     text-align: center;
     white-space: nowrap;
     width: 124px;
@@ -88,7 +83,6 @@
 @media (min-width: $tablet-width) {
   .main-case-statistics__stats {
     width: fit-content;
-    font-size: 14px;
     padding: 0;
     padding-top: 15px;
     padding-bottom: 20px;
@@ -107,7 +101,6 @@
   line-height: 100%;
   color: #444444;
   background-color: #eaeaea;
-  margin: 0;
   padding: 0;
   margin: -10px auto 0;
   padding-left: 15px;

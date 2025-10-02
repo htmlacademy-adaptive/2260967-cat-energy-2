@@ -7,7 +7,6 @@
   padding: 0;
   position: relative;
   padding-bottom: 32px;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -16,10 +15,9 @@
     padding-bottom: 66px;
     font-size: 32px;
     line-height: 32px;
-    box-shadow: -40px 0 #fff, 40px 0 #fff;
+    box-shadow: -40px 0 #ffffff, 40px 0 #ffffff;
     width: fit-content;
     background-color: #ffffff;
-
   }
 }
 
@@ -36,7 +34,7 @@
 .promotions-subscribe__title::before {
   content: "";
   z-index: -1;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100vw;
   height: 2px;
   position: absolute;
@@ -57,14 +55,12 @@
     right: -28px;
     box-shadow: 100vw 0 $basic-green;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .promotions-subscribe__title::before {
     bottom: 25px;
   }
-
 }
 
 .promotions-subscribe__text {
@@ -159,9 +155,9 @@
   .subscribe-button {
     width: 256px;
     padding: 15px 70px;
-
   }
 }
+
 .subscribe-button:hover {
   background-color: $basic-green-2;
 }

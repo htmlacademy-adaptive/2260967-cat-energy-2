@@ -3,6 +3,7 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -15,15 +16,17 @@ body {
   white-space: nowrap;
   clip-path: inset(100%);
 }
-li{
+
+li {
   list-style-type: none;
 }
 
-br{
-display: none;
+br {
+  display: none;
 }
-@media(min-width: $tablet-width){
- br{
-display: block;
-}
+
+@media (min-width: $tablet-width) {
+  br {
+    display: block;
+  }
 }

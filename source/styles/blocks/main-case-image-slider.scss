@@ -24,8 +24,7 @@
 
 .main-case-image-slider picture {
   grid-area: 1 / 1;
-  align-self: stretch;
-  justify-self: stretch;
+  place-self: stretch stretch;
   z-index: 0;
 }
 
@@ -57,7 +56,7 @@
   z-index: 2;
 }
 
-.main-case-image-slider:hover:before {
+.main-case-image-slider:hover::before {
   background: $basic-green;
 }
 
@@ -73,6 +72,6 @@
   z-index: 3;
 }
 
-.main-case-image-slider:hover:after {
+.main-case-image-slider:hover::after {
   background: url("../../icons/stack.svg#icon-thumb-hover") center/40px 40px no-repeat;
 }

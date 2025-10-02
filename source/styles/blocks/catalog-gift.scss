@@ -1,7 +1,6 @@
 .catalog-gift {
   background-image: linear-gradient(rgba(104, 183, 56, 0.85)), url("../../images/cat-bag-gift@2x.png");
   position: relative;
-  margin: 0;
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -54,7 +53,6 @@
   padding: 187px 64px 43px 57px;
   text-align: center;
   min-width: 161px;
-
 }
 
 @media (min-width: $tablet-width) {
@@ -62,15 +60,12 @@
     padding: 70px 120px 69px 422px;
     text-align: left;
   }
-
 }
 
 @media (min-width: $desktop-width) {
   .catalog-gift__text {
-    padding: 185px 42px 43px 42px;
     max-width: 161px;
     padding: 185px 42px 43px;
     text-align: center;
   }
-
 }

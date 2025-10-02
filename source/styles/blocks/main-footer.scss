@@ -1,5 +1,5 @@
 .main-footer {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,7 +29,6 @@
     flex-direction: row;
     align-items: flex-end;
   }
-
 }
 
 .main-footer__social-list {
@@ -65,7 +64,6 @@
 
 .main-footer__link {
   margin: 0;
-  padding: 0;
   padding: 40px 76px 17px;
   border-bottom: 1px solid #d9d9d9;
   width: fit-content;
@@ -81,8 +79,6 @@
 
 @media (min-width: $tablet-width) {
   .main-footer__link {
-    margin: 0;
-    padding: 0;
     width: fit-content;
     padding: 0;
     margin: 0;
@@ -92,36 +88,36 @@
 
 .main-footer__social-link--vk::before {
   content: "";
-  background-color: #666;
+  background-color: #666666;
   width: 28px;
   height: 22px;
   display: block;
-  mask-image: url(../../icons/stack.svg#icon-vk);
+  mask-image: url("../../icons/stack.svg#icon-vk");
 }
 
 .main-footer__social-link--tg::before {
   content: "";
-  background-color: #666;
+  background-color: #666666;
   width: 28px;
   height: 22px;
   display: block;
-  mask-image: url(../../icons/stack.svg#icon-tg);
+  mask-image: url("../../icons/stack.svg#icon-tg");
 }
 
 .main-footer__social-link--youtube::before {
   content: "";
-  background-color: #666;
+  background-color: #666666;
   width: 28px;
   height: 22px;
   display: block;
-  mask-image: url(../../icons/stack.svg#icon-youtube);
+  mask-image: url("../../icons/stack.svg#icon-youtube");
 }
 
-.main-footer__social-link:hover:before {
+.main-footer__social-link:hover::before {
   background-color: $basic-green;
 }
 
-.main-footer__social-link:active:before {
+.main-footer__social-link:active::before {
   opacity: 30%;
 }
 
@@ -157,13 +153,13 @@
 .main-footer__academy-link::after {
   content: "";
   position: absolute;
-  background-color: #666;
+  background-color: #666666;
   width: 27px;
   height: 34px;
   top: 21px;
   left: 253px;
   display: block;
-  mask-image: url(../../icons/stack.svg#icon-htmlacademy-logo);
+  mask-image: url("../../icons/stack.svg#icon-htmlacademy-logo");
 }
 
 @media (min-width: $tablet-width) {
@@ -173,10 +169,10 @@
   }
 }
 
-.main-footer__academy-link:hover:after {
+.main-footer__academy-link:hover::after {
   background-color: $basic-green;
 }
 
-.main-footer__academy-link:active:after {
+.main-footer__academy-link:active::after {
   opacity: 30%;
 }

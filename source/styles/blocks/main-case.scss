@@ -30,8 +30,7 @@
 
 @media (min-width: $tablet-width) {
   .main-case-background {
-    background-color: #eaeaea;
-    background: linear-gradient(0deg, #eaeaea 462px, #0000 462px);
+    background-color: linear-gradient(0deg, #eaeaea 462px, #ffffff 462px);
     padding-top: 5px;
     padding-bottom: 101px;
   }
@@ -39,15 +38,13 @@
 
 @media (min-width: $desktop-width) {
   .main-case-background {
-    background-color: $basic-grey;
-    background: linear-gradient(0deg, $basic-grey 462px, #0000 136px);
+    background-color: linear-gradient(0deg, $basic-grey 462px, #ffffff 136px);
     padding-bottom: 80px;
   }
 }
 
 .main-case__title {
   margin: 0;
-  padding: 0;
   font-family: "Oswald", sans-serif;
   font-weight: 400;
   font-size: 36px;
@@ -62,7 +59,7 @@
   .main-case__title {
     font-size: 60px;
     line-height: 60px;
-    padding: 45px 0px 60px 0px;
+    padding: 45px 0 60px;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
@@ -70,7 +67,7 @@
 
 @media (min-width: $desktop-width) {
   .main-case__title {
-    padding: 0px 335px 142px 0px;
+    padding: 0 335px 142px 0;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     border: none;
@@ -139,9 +136,9 @@
     margin: 0;
     margin-top: 15px;
     gap: none;
-
   }
 }
+
 @media (min-width: $desktop-width) {
   .main-case__cost-wrapper {
     display: flex;
@@ -150,7 +147,6 @@
     margin: 0;
     gap: 65px;
     padding: 0;
-
   }
 }
 

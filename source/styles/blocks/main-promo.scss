@@ -24,27 +24,23 @@
 @media (min-width: $desktop-width) {
   .main-promo {
     position: relative;
-    background: #fff;
     padding-top: 0;
     padding-bottom: 52px;
-    background: linear-gradient(90deg, #0000 50%, #68b738d9 50%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 50%, rgba(104, 183, 56, 0.85) 50%);
   }
 
   .main-promo::after {
     content: "";
     position: absolute;
-    top: auto;
-    left: 50%;
-    right: 0;
+    inset: auto 0 0 50%;
     height: 694px;
-    bottom: 0;
     background: url("../../images/desktop-cat-main-background@2x.png");
     background-size: cover;
     z-index: -2;
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -52,7 +48,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .grid {
     display: grid;
     grid-template-columns: 416px auto;
@@ -74,7 +70,7 @@
   grid-area: 1 / 1 / 2 / 2;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-promo__title {
     color: #000000;
     font-family: "Oswald", sans-serif;
@@ -85,11 +81,10 @@
     padding-left: 90px;
     padding-bottom: 40px;
     text-align: start;
-
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .main-promo__title {
     color: #000000;
     text-align: start;
@@ -98,7 +93,7 @@
     margin: 81px 0 40px;
     padding: 0;
     min-height: 120px;
-    font-family: Oswald, sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
@@ -118,7 +113,7 @@
   text-transform: uppercase;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-promo__description {
     color: #000000;
     padding: 0;
@@ -128,21 +123,20 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
-    margin-left: 90px;
     margin-bottom: 21px;
     text-align: start;
     margin-left: 90px;
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .main-promo__description {
-    color: #000;
+    color: #000000;
     text-transform: uppercase;
     text-align: start;
     margin: 0 0 52px;
     padding: 0;
-    font-family: Oswald, sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
@@ -176,7 +170,7 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .program-selection {
     width: 242;
     height: 54;
@@ -190,7 +184,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .program-selection {
     width: 242;
     height: 54;
@@ -203,13 +197,13 @@
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-promo__picture {
     grid-area: 3 / 1 / 4 / -1;
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .main-promo__picture {
     grid-area: 1 / 2 / -1 / -1;
     margin-left: -49px;

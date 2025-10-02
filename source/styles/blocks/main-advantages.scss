@@ -9,7 +9,7 @@
   margin-bottom: 40px;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages__title {
     font-size: 60px;
     line-height: 60px;
@@ -19,7 +19,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .main-advantages__title {
     font-size: 60px;
     line-height: 60px;
@@ -40,7 +40,7 @@
   margin-bottom: 49px;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages-list {
     display: grid;
     grid-template-columns: 242px 242px;
@@ -51,7 +51,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .main-advantages-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -71,7 +71,7 @@
   position: relative;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages__item {
     display: flex;
     flex-direction: column;
@@ -84,7 +84,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .main-advantages__item {
     display: flex;
     flex-direction: column;
@@ -103,7 +103,7 @@
   position: absolute;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages__item::before {
     content: "";
     width: 80px;
@@ -125,7 +125,7 @@
   background-image: url("../../icons/stack.svg#icon-leaf");
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages__item.leaf::before {
     top: 2px;
     left: 25px;
@@ -142,7 +142,7 @@
   background-image: url("../../icons/stack.svg#icon-bubbles");
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages__item.bubbles::before {
     top: 2px;
     left: 25px;
@@ -159,7 +159,7 @@
   background-image: url("../../icons/stack.svg#icon-eat");
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages__item.eat::before {
     top: 2px;
     left: 25px;
@@ -176,7 +176,7 @@
   background-image: url("../../icons/stack.svg#icon-clock");
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages__item.clock::before {
     top: 2px;
     left: 25px;
@@ -193,26 +193,24 @@
   position: relative;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages-list__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 112px 0px 57px 0px;
-
+    padding: 112px 0 57px;
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .main-advantages-list__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 112px 0px 57px 0px;
+    padding: 112px 0 57px;
     min-width: 245px;
-
   }
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages__item::after {
     position: absolute;
     top: -40px;
@@ -253,14 +251,13 @@
   left: -80px;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .main-advantages-list__description::before {
     content: "";
     display: block;
     background-color: #68b738;
     width: 80px;
     height: 80px;
-    top: 25px;
     position: absolute;
     top: 1px;
     left: -1px;

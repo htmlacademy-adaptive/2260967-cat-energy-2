@@ -14,7 +14,7 @@
   padding-bottom: 22px;
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .catalog-promo-card__item {
     width: 570px;
     padding: 0;
@@ -33,7 +33,7 @@
   z-index: -1;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .catalog-promo-card__item::before {
     content: "";
     position: absolute;
@@ -47,7 +47,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .catalog-promo-card__item::before {
     content: "";
     position: absolute;
@@ -74,7 +74,7 @@
   white-space: nowrap;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .catalog-promo-card__title {
     font-size: 36px;
     line-height: 36px;
@@ -86,7 +86,7 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .catalog-promo-card__title {
     font-size: 36px;
     line-height: 36px;
@@ -108,7 +108,7 @@
   background: url("../../icons/stack.svg#cat-catalog-mobile");
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .cat::after {
     content: "";
     position: absolute;
@@ -116,11 +116,10 @@
     left: 475px;
     width: 140px;
     height: 194px;
-
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .cat::after {
     content: "";
     position: absolute;
@@ -128,15 +127,12 @@
     left: 67px;
     width: 70px;
     height: 97px;
-
   }
 }
 
 .catalog-promo-card__description {
   font-family: "Lato", sans-serif;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
   color: #000000;
   padding-bottom: 23px;
   margin: 0;
@@ -148,22 +144,22 @@
   border-bottom: 1px solid #d9d9d9;
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .catalog-promo-card__description {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding: 0px 316px 48px 52px;
+    padding: 0 316px 48px 52px;
     border: none;
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .catalog-promo-card__description {
     font-size: 16px;
     line-height: 24px;
     margin: 0;
-    padding: 0px 61px 23px 52px;
+    padding: 0 61px 23px 52px;
     border: none;
   }
 }
@@ -178,10 +174,9 @@
   background: url("../../icons/stack.svg#panter-catalog-mobile");
 }
 
-@media(min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
   .panter::after {
     content: "";
-    position: absolute;
     width: 268px;
     height: 112px;
     position: absolute;
@@ -190,10 +185,9 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
   .panter::after {
     content: "";
-    position: absolute;
     width: 134px;
     height: 100px;
     position: absolute;
