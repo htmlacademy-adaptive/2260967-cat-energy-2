@@ -8,6 +8,8 @@
   <title>Cat-energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="scripts/index.js" defer></script>
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -57,7 +59,7 @@
   </header>
   <main class="main-container">
     <div class="main-promo">
-      <div class="content-limiter grid">
+      <div class="content-limiter main-promo--grid">
         <h1 class="main-promo__title">Функциональное питание&nbsp;для&nbsp;котов</h1>
         <p class="main-promo__description">Занялся собой? Займись котом!</p>
         <div class="main-promo__picture">
@@ -76,23 +78,23 @@
             <img src="images/mobile-index-can@1x.png" alt="Питание для котов курица" width="280" height="270">
           </picture>
         </div>
-        <a class="program-selection" href="#" >Подобрать программу</a>
+        <a class="main-promo__program-selection" href="#">Подобрать программу</a>
       </div>
     </div>
     <div class="catalog-promo content-limiter">
       <ul class="catalog-promo-card">
-        <li class="catalog-promo-card__item cat">
+        <li class="catalog-promo-card__item catalog-promo-card__item--cat">
           <h2 class="catalog-promo-card__title">похудение</h2>
           <p class="catalog-promo-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
             деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
           <div class="catalog-promo-card-button">
             <a class="catalog-promo-card-button__link" href="#">Каталог slim</a>
-            </div>
-            </li>
+          </div>
+        </li>
       </ul>
       <ul class="catalog-promo-card">
-        <li class="catalog-promo-card__item panter">
+        <li class="catalog-promo-card__item catalog-promo-card__item--panter">
           <h2 class="catalog-promo-card__title">Набор массы</h2>
           <p class="catalog-promo-card__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
             Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -106,23 +108,23 @@
     <div class="main-advantages content-limiter">
       <h2 class="main-advantages__title">Как это работает</h2>
       <ul class="main-advantages-list">
-        <li class="main-advantages__item leaf">
+        <li class="main-advantages__item main-advantages__item--leaf">
           <p class="main-advantages-list__description">Функциональное питание содержит только полезные питательные
             вещества.</p>
         </li>
-        <li class="main-advantages__item bubbles">
+        <li class="main-advantages__item main-advantages__item--bubbles">
           <p class="main-advantages-list__description">Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.</p>
         </li>
-        <li class="main-advantages__item eat">
+        <li class="main-advantages__item main-advantages__item--eat">
           <p class="main-advantages-list__description">Замените один-два приема
             обычной еды на наше
             функциональное питание.</p>
         </li>
-        <li class="main-advantages__item clock">
+        <li class="main-advantages__item main-advantages__item--clock">
           <p class="main-advantages-list__description">Уже через месяц наслаждайтесь
-            изменениями к лучшему <br>вашего питомца!</p>
+            изменениями к лучшему вашего&nbsp;питомца!</p>
         </li>
       </ul>
     </div>
@@ -153,7 +155,7 @@
             <p class="main-case__cost">15 000 РУБ.</p>
           </div>
         </div>
-        <div class="main-case-image-slider ">
+        <div class="main-case-image-slider">
           <picture>
             <source media="(min-width: 1440px)" width="560" height="512" type="image/webp"
               srcset="images/tablet-cat-before@1x.webp, images/tablet-cat-before@2x.webp 2x">
@@ -182,6 +184,9 @@
               srcset="images/tablet-cat-after@1x.png, images/tablet-cat-after@2x.png 2x">
             <img src="images/mobile-cat-after@1x.png" alt="Ваш кот до и после" width="280" height="256">
           </picture>
+          <button class="main-case-image-slider__btn" type="button">
+            <span class="visually-hidden">Слайдер фото до и после</span>
+          </button>
         </div>
       </div>
     </div>
@@ -199,7 +204,7 @@
           srcset="images/desktop-location@1x.webp, images/desktop-location@2x.webp 2x">
         <source media="(min-width: 768px)" width="768" height="400" type="image/webp"
           srcset="images/tablet-location@1x.webp, images/tablet-location@2x.webp 2x">
-        <source  width="768" height="400" type="image/webp"
+        <source width="768" height="400" type="image/webp"
           srcset="images/mobile-location@1x.webp, images/mobile-location@2x.webp 2x">
 
         <source media="(min-width: 1440px)" width="1440" height="400" type="image/png"
@@ -246,9 +251,10 @@
         <a class="main-footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="visually-hidden">Ссылка на страницу Академии</span>
         </a>
-          <svg width="113" height="20">
-            <use href="icons/stack.svg#icon-htmlacademy-letters">
-              </use></svg>
+        <svg width="113" height="20">
+          <use href="icons/stack.svg#icon-htmlacademy-letters">
+          </use>
+        </svg>
       </div>
     </div>
   </footer>

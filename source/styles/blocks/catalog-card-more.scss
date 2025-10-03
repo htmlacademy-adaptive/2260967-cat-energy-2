@@ -9,6 +9,21 @@
   .catalog-card-more {
     margin: 0;
     padding: 0;
+    margin-top: 82px;
+    border: 2px solid #f2f2f2;
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-card-more {
+    margin: 0;
+    padding: 0;
+    width: 245px;
+    height: 430px;
+    margin-top: 80px;
+    border: 2px solid #f2f2f2;
+
   }
 }
 
@@ -32,7 +47,7 @@
   .catalog-card-more__title {
     font-size: 20px;
     line-height: 24px;
-    padding: 241px 95px 23px;
+    padding: 158px 91px 23px;
   }
 }
 
@@ -40,15 +55,16 @@
   .catalog-card-more__title {
     font-size: 20px;
     line-height: 24px;
-    padding: 227px 47px 23px;
+    padding: 145px 47px 23px;
+
   }
 }
 
 .catalog-card-more__title::before {
   content: "";
   position: absolute;
-  top: -35px;
-  left: 140px;
+  top: -39px;
+  left: 139px;
   transform: translateY(-50%);
   width: 2px;
   height: 30px;
@@ -57,23 +73,23 @@
 
 @media (min-width: $tablet-width) {
   .catalog-card-more__title::before {
-    top: 162px;
-    left: 162px;
+    top: 78px;
+    left: 159px;
     height: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-card-more__title::before {
-    top: 158px;
-    left: 123px;
+    top: 78px;
+    left: 121px;
   }
 }
 
 .catalog-card-more__title::after {
   content: "";
   position: absolute;
-  top: -35px;
+  top: -39px;
   left: 125px;
   transform: translateY(-50%);
   width: 30px;
@@ -83,16 +99,16 @@
 
 @media (min-width: $tablet-width) {
   .catalog-card-more__title::after {
-    top: 163px;
-    left: 132px;
+    top: 78px;
+    left: 129px;
     width: 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-card-more__title::after {
-    top: 159px;
-    left: 94px;
+    top: 78px;
+    left: 91px;
     width: 60px;
   }
 }
@@ -114,8 +130,9 @@
   .catalog-card-more__text {
     font-size: 16px;
     line-height: 18px;
-    padding: 0 77px 93px;
+    padding: 0 77px 81px 70px;
     text-align: center;
+
   }
 }
 
@@ -123,7 +140,9 @@
   .catalog-card-more__text {
     font-size: 16px;
     line-height: 18px;
-    padding: 0 37px 104px;
+    padding: 0 37px 95px;
     text-align: center;
+    border-top: none;
+    border-bottom: none;
   }
 }

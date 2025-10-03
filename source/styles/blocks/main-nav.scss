@@ -96,9 +96,10 @@
   .main-nav__list {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 476px;
     justify-content: space-between;
     padding: 0;
+    flex-wrap: wrap;
   }
 }
 
@@ -196,6 +197,7 @@
 @media (min-width: $desktop-width) {
   .main-nav__link--active::after {
     top: 36px;
-    background-color: #ffffff;
+    background-color: $basic-green;
+
   }
 }

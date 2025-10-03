@@ -7,7 +7,7 @@
   .main-header {
     display: flex;
     flex-direction: row;
-    margin-bottom: 75px;
+    margin-bottom: 38px;
   }
 }
 
@@ -25,7 +25,6 @@
 @media (min-width: $desktop-width) {
   .main-header--index {
     background: linear-gradient(90deg, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%);
-    margin-bottom: -3px;
   }
 
   .main-header--index .main-nav__link {

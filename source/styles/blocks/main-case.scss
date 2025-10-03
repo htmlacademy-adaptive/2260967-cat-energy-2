@@ -23,26 +23,6 @@
   }
 }
 
-.main-case-background {
-  background-color: #eaeaea;
-  padding-bottom: 40px;
-}
-
-@media (min-width: $tablet-width) {
-  .main-case-background {
-    background-color: linear-gradient(0deg, #eaeaea 462px, #ffffff 462px);
-    padding-top: 5px;
-    padding-bottom: 101px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .main-case-background {
-    background-color: linear-gradient(0deg, $basic-grey 462px, #ffffff 136px);
-    padding-bottom: 80px;
-  }
-}
-
 .main-case__title {
   margin: 0;
   font-family: "Oswald", sans-serif;

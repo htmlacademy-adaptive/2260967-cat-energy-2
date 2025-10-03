@@ -17,16 +17,5 @@ body {
   clip-path: inset(100%);
 }
 
-li {
-  list-style-type: none;
-}
 
-br {
-  display: none;
-}
 
-@media (min-width: $tablet-width) {
-  br {
-    display: block;
-  }
-}

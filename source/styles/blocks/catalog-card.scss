@@ -11,7 +11,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto 1fr min-content;
     margin: 0;
-    padding: 0 37px 40px;
+    padding: 0 37px 0px;
     background: linear-gradient(0deg, $basic-grey 430px, #ffffff 81px);
   }
 }
@@ -22,8 +22,9 @@
     flex-direction: column;
     margin: 0;
     padding: 0;
+    padding: 0;
     width: 245px;
-    height: 511px;
+    min-height: 511px;
     background: linear-gradient(0deg, $basic-grey 430px, #ffffff 81px);
   }
 }
