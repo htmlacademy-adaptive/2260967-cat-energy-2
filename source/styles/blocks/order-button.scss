@@ -1,6 +1,6 @@
 .order-button {
   background-color: $basic-green;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -29,7 +29,7 @@
   .order-button {
     width: 169px;
     height: 40px;
-    align-self: anchor-center;
+    margin-inline: auto;
     padding: 10px 53px;
   }
 }

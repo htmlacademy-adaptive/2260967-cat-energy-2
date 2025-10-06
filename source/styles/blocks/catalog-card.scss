@@ -39,8 +39,8 @@
 .catalog-card__img {
   grid-area: 1 / 1 / 3 / 2;
   margin: 0;
-  height: fit-content;
-  place-self: anchor-center anchor-center;
+  height: auto;
+  place-self: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,7 +90,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $base-color-description-text;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -132,13 +132,14 @@
     padding-bottom: 27px;
     width: 250px;
     grid-area: 3 / 1 / 4 / 2;
+    margin-inline: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-card__specification-list {
     width: 169px;
-    align-self: anchor-center;
+    margin-inline: auto;
     padding-bottom: 29px;
   }
 }
@@ -167,7 +168,7 @@
 .catalog-card__specification-text {
   text-decoration: none;
   color: $base-color-description-text;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
