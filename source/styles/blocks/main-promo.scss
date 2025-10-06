@@ -150,7 +150,7 @@
   text-decoration: none;
   display: block;
   width: 280;
-  height: 40;
+  height: fit-content;
   background-color: $basic-green;
   color: #ffffff;
   font-family: "Oswald", "Arial", sans-serif;
@@ -175,7 +175,7 @@
 @media (min-width: $tablet-width) {
   .main-promo__program-selection {
     width: 242;
-    height: 54;
+    height: fit-content;
     font-size: 20px;
     line-height: 26px;
     margin-left: 90px;
@@ -189,7 +189,7 @@
 @media (min-width: $desktop-width) {
   .main-promo__program-selection {
     width: 242;
-    height: 54;
+    height: fit-content;
     font-size: 20px;
     line-height: 26px;
     margin: 0 0 132px;
