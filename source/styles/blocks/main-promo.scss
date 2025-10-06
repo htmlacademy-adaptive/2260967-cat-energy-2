@@ -1,6 +1,6 @@
 .main-promo {
   background-image:
-    linear-gradient(#66b738d9 60%, #fff 60%),
+    linear-gradient(rgba(102, 183, 56, 0.85) 60%, #ffffff 60%),
     image-set(url("../../images/index-background-mobile@1x.jpg") 1x,
       url("../../images/index-background-mobile@2x.jpg") 2x);
   background-color: #2e4d1c;
@@ -36,8 +36,7 @@
     position: absolute;
     inset: auto 0 0 50%;
     height: 694px;
-    background-image: image-set(url("../../images/desktop-cat-main-background@1x.jpg") 1x,
-        url("../../images/desktop-cat-main-background@2x.jpg") 2x);
+    background-image: image-set(url("../../images/desktop-cat-main-background@1x.jpg") 1x, url("../../images/desktop-cat-main-background@2x.jpg") 2x);
     background-size: cover;
     z-index: -2;
   }

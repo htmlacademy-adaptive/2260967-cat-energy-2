@@ -1,7 +1,7 @@
 .catalog-gift {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85)),
-    image-set(url("../../images/cat-bag-gift@1x.jpg") 1x,
-      url("../../images/cat-bag-gift@2x.jpg") 2x);
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85)),
+    image-set(url("../../images/cat-bag-gift@1x.jpg") 1x, url("../../images/cat-bag-gift@2x.jpg") 2x);
   position: relative;
   background-position: 50%;
   background-repeat: no-repeat;
